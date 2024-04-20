@@ -32,7 +32,7 @@ body {
   }
   
   .collection {
-    width: calc(33% - 20px);  /* Adjust width as needed */
+    width: calc(33% - 20px);  /* Adjust width as needed for desktops */
     margin-bottom: 20px;
     text-align: center;
     background-color: #fff;  /* White background for collections */
@@ -51,5 +51,21 @@ body {
     background-color: #f08080;  /* Light pink */
     color: white;
     padding: 10px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (tablets and phones) */
+    .collection {
+      width: 100%;  /* Make collections full width on smaller screens */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Styles for screens between 768px and 992px (tablets) */
+    .collection {
+      width: 50%;  /* Adjust collection width for medium screens */
+    }
   }
   
